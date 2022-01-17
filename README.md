@@ -18,3 +18,7 @@ These are the results we have obtained from our basline model on the Flicker Fac
 <img src="figures/color_output.png">
 <h3 align="center"> True Colors </h3>
 <img src="figures/true_color.png">
+
+# Conclusion
+
+The results are at times hard to label as artificial, but at the same time there is large scope of improvement in color prediction. We aim to improve on these results with subsequent completion of this work.
