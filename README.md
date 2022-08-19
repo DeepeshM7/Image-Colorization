@@ -1,7 +1,7 @@
 # Image-Colorization
-This is an ongoing project and is to be updated.
+We propose a fully convolutional approach, making use of ResNet50 layers as encoder and nearest neighbour up sampling in decoder, we train a branch parallel to our decoder for inpainting task on grayscale images and mix the features of inpainting branch with colorization decoder. We also make use of Adversarial training by employing a discriminator for our colorization branch.
 
-# Baseline Architecture
+# Architecture
 We have made a simple U-Net architecture employing first two layers of ResNet50 network(pre-trained on imagenet) as Encoder.
 </br>
 In the decoder section we have used Upsampling layers to avoid checkerboard artifacts.
@@ -9,8 +9,8 @@ In the decoder section we have used Upsampling layers to avoid checkerboard arti
 </br>
 <img src="figures/Color_Model.png">
 
-# BASELINE Results
-These are the results we have obtained from our basline model on the Flicker Faces Dataset. As it is evident the architecture is capable of modeling decent color aesthetics while witholding quality of image.
+# Results
+These are the results we have obtained from our model on the Flicker Faces Dataset. As it is evident the architecture is capable of modeling decent color aesthetics while witholding quality of image.
 </br>
 </br>
 
@@ -21,4 +21,4 @@ These are the results we have obtained from our basline model on the Flicker Fac
 
 # Conclusion
 
-The results are at times hard to label as artificial, but at the same time there is large scope of improvement in color prediction. We aim to improve on these results with subsequent completion of this work.
+The results are satisfactory given the resources at hand, we have achieved improvement in color prediction from our baseline model by adopting adversarial training.
